@@ -1,0 +1,28 @@
+# Dependencias principales del Agente FinOps e Infraestructura GCP
+fastapi>=0.110.0
+uvicorn[standard]>=0.28.0
+pydantic>=2.6.0
+pydantic-settings>=2.2.0
+
+# SDK de Google Cloud
+google-cloud-bigquery>=3.19.0
+google-cloud-recommender>=2.14.0
+google-cloud-asset>=3.24.0
+google-cloud-compute>=1.18.0
+google-cloud-pubsub>=2.20.0
+google-cloud-secret-manager>=2.18.0
+google-cloud-workflows>=1.13.0
+
+# LangChain y Vertex AI
+langchain>=0.2.0
+langchain-google-vertexai>=1.0.0
+langchain-core>=0.2.0
+
+# Integración con ChatOps (Slack / Webhooks)
+slack-sdk>=3.27.0
+httpx>=0.27.0
+
+# Utilidades y Pruebas
+pytest>=8.1.0
+pytest-asyncio>=0.23.0
+python-dotenv>=1.0.1

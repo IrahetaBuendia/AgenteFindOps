@@ -1,0 +1,19 @@
+# Entornos virtuales y Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.env
+.venv/
+venv/
+env/
+
+# Pruebas y Cobertura
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Logs e IDE
+*.log
+.vscode/
+.idea/
+.DS_Store

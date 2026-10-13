@@ -1,0 +1,30 @@
+{
+  "descripcion": "Definición de roles IAM mínimos para la Cuenta de Servicio del Agente FinOps",
+  "cuenta_de_servicio_sugerida": "sa-finops-agent@{{PROJECT_ID}}.iam.gserviceaccount.com",
+  "roles_requeridos": [
+    {
+      "rol": "roles/bigquery.dataViewer",
+      "descripcion": "Permite consultar tablas y vistas de exportación de facturación sin permisos de modificación"
+    },
+    {
+      "rol": "roles/bigquery.jobUser",
+      "descripcion": "Permite ejecutar trabajos de consulta SQL en el proyecto"
+    },
+    {
+      "rol": "roles/recommender.viewer",
+      "descripcion": "Permite leer recomendaciones e insights de optimización de costos y right-sizing"
+    },
+    {
+      "rol": "roles/cloudasset.viewer",
+      "descripcion": "Permite consultar inventario de activos y estados de recursos en la nube"
+    },
+    {
+      "rol": "roles/aiplatform.user",
+      "descripcion": "Permite realizar inferencias y Function Calling con modelos Gemini en Vertex AI"
+    },
+    {
+      "rol": "roles/workflows.invoker",
+      "descripcion": "Permite invocar flujos de remediación autorizados tras confirmación HITL"
+    }
+  ]
+}
